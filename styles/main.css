@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0 ; 
+    padding: 0 ; 
+  }
+  html{
+    background-image: url(../Images/qv47amzkask71.png);
+    background-attachment: fixed;
+  }
+  body {
+    font-family: Arial;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  header{
+    display: flex;
+    align-items: center;
+    background-image: url(../Images/qv47amzkask71.png);
+  }
+  header img{ 
+    max-width: 250px;
+    padding: 2vh;
+  }
+  header h2{
+    font-size: 250%;
+    text-shadow: 1px 1px 1px gold, -1px -1px 1px gold, 1px -1px 1px gold, -1px 1px 1px gold ;
+    color: rgb(255, 255, 255) ;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  footer{
+
+    padding: 2vh 0 ;
+    background-image: url(../Images/qv47amzkask71.png);
+  }
+
+  footer p {
+    text-shadow: 1px 1px 1px gold, -1px -1px 1px gold, 1px -1px 1px gold, -1px 1px 1px gold ;
+    color: rgb(0, 0, 0) ;
+    text-align: center;
+    font-variant: small-caps;
+    font-weight: bold;
+  }
+  @media (max-width: 1000px) {
+    .column {
+      flex: 33%;
+      max-width: 33%;
+    }
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+      
+    }
+    header{
+        flex-direction: column;
+      }
+      header h2{ 
+        font-size: 150%;
+      }
+  }
+
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
